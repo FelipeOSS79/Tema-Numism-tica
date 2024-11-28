@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styleFormulario.css"/>
+    <script src="js/script.js"></script>
+
+    <title>Formulario</title>
+    <link rel="icon" href="img/formulario.ico" type="image/ico">
+</head>
+
+<body>
+
+    <div class="div_principal">
+
+        <h1>Preencha seus dados</h1>
+
+        <div class="div_sec">
+
+            <input type="text" id="nome" placeholder="Nome completo" required />
+            <input type="date" id="dataNascimento" placeholder="Data de nascimento">
+            <input type="email" id="email" placeholder="E-mail" required />
+            <input type="tel" id="telefone" placeholder="Telefone" required>
+            <select id="estado">
+                <option value="">Selecione seu estado e cidade</option>
+                <option value="sp_sao_paulo">São Paulo - SP</option>
+                <option value="rj_rio_de_janeiro">Rio de Janeiro - RJ</option>
+                <option value="mg_belo_horizonte">Belo Horizonte - MG</option>
+                <option value="ba_salvador">Salvador - BA</option>
+            </select>
+            <select id="genero">
+                <option value="">Selecione seu gênero</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outros">Outros</option>
+                <option value="Nao_informar">Prefiro não informar</option>
+            </select>
+
+            <div class="botoes">
+                <button onClick="Enviar()">Enviar</button>
+            </div>
+
+        </div>
+    </div>
+    <a href="index.html" id="voltar-principal" title="Voltar à Página Principal">
+        🏠
+    </a>
+</body>
+
+</html>

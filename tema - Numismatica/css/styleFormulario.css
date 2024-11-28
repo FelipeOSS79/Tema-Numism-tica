@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #a66d47;
+}
+
+.div_principal {
+    background-color: #fdf5e6;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px #fff;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #6b4423;
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #b89473;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #a67c52;
+    box-shadow: 0px 0px 5px rgba(166, 124, 82, 0.8);
+    outline: none;
+}
+
+button {
+    background-color: #a67c52;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #8d6b3d;
+    transform: scale(1.05);
+}
+
+/*Essa opção vai fazer com que o botão fique como inativo enquanto carrega*/
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#voltar-principal {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a67c52;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#voltar-principal:hover {
+    background-color: #8d6b3d;
+    transform: scale(1.1);
+}
+
